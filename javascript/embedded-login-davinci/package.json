@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.9"
+    "husky": "^9.1.7",
+    "vite": "^6.3.5"
   },
   "dependencies": {
-    "@forgerock/davinci-client": "latest",
+    "@forgerock/davinci-client": "^1.1.0",
     "@forgerock/javascript-sdk": "^4.6.0"
   }
 }

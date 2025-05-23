@@ -15,7 +15,8 @@ console.log(import.meta.env);
 const config = {
   clientId: import.meta.env.VITE_WEB_OAUTH_CLIENT,
   redirectUri: window.location.origin + '/',
-  scope: 'openid profile email name revoke',
+  scope: import.meta.env.VITE_SCOPE,
+  responseType: import.meta.env.VITE_RESPONSE_TYPE,
   serverConfig: {
     wellknown: import.meta.env.VITE_WELLKNOWN_URL,
   },
